@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <span className="font-serif text-2xl font-bold text-spice-500">Flavor<span className="text-herb-500">Forge</span></span>
+          <span className="font-serif text-2xl font-bold text-spice-500">The<span className="text-herb-500">FoodLog</span></span>
         </Link>
 
         {/* Desktop Navigation */}

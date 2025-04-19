@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-serif text-xl font-semibold mb-4">Flavor<span className="text-herb-500">Forge</span></h3>
+            <h3 className="font-serif text-xl font-semibold mb-4">The<span className="text-herb-500">FoodLog</span></h3>
             <p className="text-muted-foreground mb-4">
               Discover delicious recipes and cooking inspiration for every meal and occasion.
             </p>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-8 pt-6 text-center text-muted-foreground text-sm">
-          <p>© {currentYear} FlavorForge. All rights reserved.</p>
+          <p>© {currentYear} TheFoodLog. All rights reserved.</p>
         </div>
       </div>
     </footer>

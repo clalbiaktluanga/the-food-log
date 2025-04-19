@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,16 +9,16 @@ const AboutPage = () => {
       
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="max-w-3xl mx-auto">
-          <h1 className="font-serif text-4xl font-bold mb-6 text-center">About <span className="text-spice-500">Flavor</span><span className="text-herb-500">Forge</span></h1>
+          <h1 className="font-serif text-4xl font-bold mb-6 text-center">About <span className="text-spice-500">The</span><span className="text-herb-500">FoodLog</span></h1>
           
           <div className="prose max-w-none">
             <p className="text-lg text-muted-foreground mb-6">
-              Welcome to FlavorForge, a place where culinary creativity meets technology. Our mission is to inspire home cooks of all skill levels to explore new flavors, techniques, and cuisines.
+              Welcome to TheFoodLog, a place where culinary creativity meets technology. Our mission is to inspire home cooks of all skill levels to explore new flavors, techniques, and cuisines.
             </p>
             
             <h2 className="font-serif text-2xl font-medium mt-8 mb-4">Our Story</h2>
             <p className="text-muted-foreground mb-4">
-              FlavorForge began as a small collection of family recipes that we wanted to preserve and share. Over time, it evolved into a comprehensive recipe platform with a passionate community of food lovers.
+              TheFoodLog began as a small collection of family recipes that we wanted to preserve and share. Over time, it evolved into a comprehensive recipe platform with a passionate community of food lovers.
             </p>
             <p className="text-muted-foreground mb-4">
               We believe that good food brings people together, creates memories, and enriches lives. Our team of experienced cooks, food photographers, and writers work together to bring you recipes that are both delicious and achievable in your home kitchen.
@@ -27,7 +26,7 @@ const AboutPage = () => {
             
             <h2 className="font-serif text-2xl font-medium mt-8 mb-4">Our Recipes</h2>
             <p className="text-muted-foreground mb-4">
-              Every recipe on FlavorForge is carefully tested multiple times to ensure success in your kitchen. We focus on:
+              Every recipe on TheFoodLog is carefully tested multiple times to ensure success in your kitchen. We focus on:
             </p>
             <ul className="list-disc pl-6 mb-6 text-muted-foreground">
               <li>Clear, step-by-step instructions</li>
@@ -50,11 +49,11 @@ const AboutPage = () => {
             
             <h2 className="font-serif text-2xl font-medium mt-8 mb-4">Contact Us</h2>
             <p className="text-muted-foreground mb-4">
-              Have questions, suggestions, or feedback? We'd love to hear from you! Reach out to us at <a href="mailto:hello@flavorforge.com" className="text-spice-500 hover:text-spice-600">hello@flavorforge.com</a>.
+              Have questions, suggestions, or feedback? We'd love to hear from you! Reach out to us at <a href="mailto:hello@thefoodlog.com" className="text-spice-500 hover:text-spice-600">hello@thefoodlog.com</a>.
             </p>
             
             <p className="text-muted-foreground mt-8">
-              Thank you for visiting FlavorForge. Happy cooking!
+              Thank you for visiting TheFoodLog. Happy cooking!
             </p>
           </div>
         </div>
