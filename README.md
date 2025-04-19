@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
 
-## Project info
+# TheFoodLog - Recipe Sharing Website
 
-**URL**: https://lovable.dev/projects/092dbeaf-a185-42ff-9020-b3a2bd341149
+TheFoodLog is a recipe sharing website built with PHP, MySQL, HTML, CSS, and jQuery for XAMPP local server.
 
-## How can I edit this code?
+## Setup Instructions
 
-There are several ways of editing your application.
+1. **Install XAMPP**
+   - Download and install [XAMPP](https://www.apachefriends.org/index.html) for your operating system
 
-**Use Lovable**
+2. **Set up the project**
+   - Clone or download this repository to your XAMPP `htdocs` folder
+   - The path should be: `C:\xampp\htdocs\thefoodlog` (Windows) or `/Applications/XAMPP/htdocs/thefoodlog` (Mac)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/092dbeaf-a185-42ff-9020-b3a2bd341149) and start prompting.
+3. **Start XAMPP services**
+   - Start the Apache and MySQL services from the XAMPP Control Panel
 
-Changes made via Lovable will be committed automatically to this repo.
+4. **Create the database**
+   - Open your browser and go to `http://localhost/phpmyadmin`
+   - Create a new database named `thefoodlog`
+   - Import the provided `database_setup.sql` file to set up the database structure and sample data
 
-**Use your preferred IDE**
+5. **Create upload directories**
+   - Create the following directories in your project folder:
+     - `uploads/recipes`
+     - `uploads/comments`
+   - Ensure these directories have write permissions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+6. **Access the website**
+   - Open your browser and navigate to `http://localhost/thefoodlog`
+   - You should see the homepage with sample recipes
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Admin Access
 
-Follow these steps:
+- To access the admin panel, go to `http://localhost/thefoodlog/admin.php`
+- Default admin credentials:
+  - Username: `admin`
+  - Password: `password123`
+- These credentials can be changed in the `includes/config.php` file
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Project Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- `index.php` - Homepage
+- `recipe.php` - Individual recipe page
+- `categories.php` - Categories listing
+- `search.php` - Search results
+- `about.php` - About page
+- `admin.php` - Admin login and dashboard
+- `notfound.php` - 404 page
+- `includes/` - PHP includes (navbar, footer, functions, config)
+- `css/` - CSS stylesheets
+- `js/` - JavaScript files
+- `uploads/` - User uploaded images
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Technologies Used
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- PHP 7.4+
+- MySQL 5.7+
+- HTML5
+- CSS3
+- jQuery 3.7.1
+- XAMPP (Apache, MySQL, PHP)
 
-**Edit a file directly in GitHub**
+## Features
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Responsive design for all devices
+- Recipe listing and filtering by categories
+- Recipe details with ingredients and instructions
+- User comments and ratings
+- Recipe search functionality
+- Admin panel for adding new recipes
+- Mobile-friendly navigation
 
-**Use GitHub Codespaces**
+## Notes
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/092dbeaf-a185-42ff-9020-b3a2bd341149) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- This is a local development project and not configured for production environments
+- For security in a production environment, admin credentials should not be stored directly in config files
+- Consider implementing proper user authentication with password hashing for a production site
